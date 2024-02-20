@@ -5,7 +5,7 @@ const scoreChart = new Chart(ctx, {
         labels: ['Team 1', 'Team 2', 'Team 3', 'Team 4', 'Team 5', 'Team 6'],
         datasets: [{
             label: '',
-            data: [12, 10, 3, 5, 2, 3], // Example data
+            data: [0, 0, 0, 0, 0, 0], // Example data
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
