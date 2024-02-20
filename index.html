@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Scores Dashboard</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevents scrolling */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Removes the border around the iframe */
+        }
+    </style>
+</head>
+<body>
+    <iframe src="dashboard.html" id="dashboardIframe"></iframe>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'F11') { // Custom key to toggle fullscreen; change as needed
+                if (!document.fullscreenElement) {
+                    document.documentElement.requestFullscreen();
+                } else {
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
